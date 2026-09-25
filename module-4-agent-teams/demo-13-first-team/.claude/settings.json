@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(./**)",
+      "Edit(./reviews/**)",
+      "Edit(./proposals/**)"
+    ],
+    "deny": [
+      "Bash(rm *)",
+      "Bash(git push*)"
+    ]
+  }
+}

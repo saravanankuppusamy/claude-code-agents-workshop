@@ -1,0 +1,6 @@
+{
+  "description": "Operations team: order and customer reporting. No payroll.",
+  "allowed_tables": ["books", "customers", "orders"],
+  "allowed_dot_commands": [".schema", ".tables", ".headers", ".mode"],
+  "max_statements": 1
+}

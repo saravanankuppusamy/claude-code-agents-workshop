@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(./**)",
+      "Bash(python3 repro/*)",
+      "Edit(./findings/**)",
+      "Edit(./rca-report.md)"
+    ],
+    "deny": [
+      "Edit(./shop/**)",
+      "Edit(./repro/**)"
+    ]
+  }
+}

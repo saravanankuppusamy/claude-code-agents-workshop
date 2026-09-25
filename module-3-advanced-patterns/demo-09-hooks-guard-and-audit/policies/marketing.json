@@ -1,0 +1,7 @@
+{
+  "description": "Marketing: catalogue only.",
+  "allowed_tables": ["books"],
+  "allowed_dot_commands": [".schema", ".tables"],
+  "max_statements": 1,
+  "default_limit": 50
+}

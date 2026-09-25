@@ -1,0 +1,4 @@
+- Added gift-wrap option at checkout
+- Fixed rounding error in member discount
+- Search now matches ISBN-10 and ISBN-13
+- Upgraded storage layer to write atomically

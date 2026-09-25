@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(./**)",
+      "Edit(./findings/**)"
+    ]
+  },
+  "hooks": {
+    "TeammateIdle": [
+      {
+        "matcher": "",
+        "hooks": [
+          { "type": "command", "command": "python3 \"${CLAUDE_PROJECT_DIR}/hooks/teammate_idle_gate.py\"" }
+        ]
+      }
+    ],
+    "TaskCreated": [
+      {
+        "matcher": "",
+        "hooks": [
+          { "type": "command", "command": "python3 \"${CLAUDE_PROJECT_DIR}/hooks/task_created_gate.py\"" }
+        ]
+      }
+    ],
+    "TaskCompleted": [
+      {
+        "matcher": "",
+        "hooks": [
+          { "type": "command", "command": "python3 \"${CLAUDE_PROJECT_DIR}/hooks/task_completed_gate.py\"" }
+        ]
+      }
+    ]
+  }
+}

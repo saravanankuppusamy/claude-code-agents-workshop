@@ -1,0 +1,8 @@
+{
+  "tasks_file": "tasks.md",
+  "artifact_pattern": "findings/{name}.md",
+  "required_sections": ["## Summary", "## Findings", "## Severity", "## Recommendation"],
+  "min_findings": 1,
+  "task_title_pattern": "^T-\\d{3}: .+ -> (?P<artifact>[\\w./-]+\\.md)$",
+  "log_file": "hooks/gate-log.jsonl"
+}

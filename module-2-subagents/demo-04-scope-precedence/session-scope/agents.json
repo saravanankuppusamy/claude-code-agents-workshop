@@ -1,0 +1,9 @@
+{
+  "release-notes": {
+    "description": "Writes release notes as a single tweet-length line. Use for release notes.",
+    "prompt": "The FIRST line of every response must be exactly: [release-notes | scope=SESSION | model=haiku]\nRead CHANGES.txt and summarise ALL changes in one line under 280 characters.",
+    "tools": ["Read"],
+    "model": "haiku",
+    "maxTurns": 3
+  }
+}

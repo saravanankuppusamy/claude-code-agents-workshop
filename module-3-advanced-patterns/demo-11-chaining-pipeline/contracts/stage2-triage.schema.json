@@ -1,0 +1,25 @@
+{
+  "title": "Stage 2 output: clusters of related issues",
+  "type": "object",
+  "required": ["clusters", "unclustered"],
+  "properties": {
+    "clusters": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["cluster_id", "title", "component", "severity", "ticket_ids", "hypothesis", "owner"],
+        "properties": {
+          "cluster_id": {"type": "string", "pattern": "^C-\\d{2}$"},
+          "title": {"type": "string", "maxLength": 80},
+          "component": {"type": "string"},
+          "severity": {"type": "string", "enum": ["critical", "high", "medium", "low"]},
+          "ticket_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^#\\d+$"}},
+          "hypothesis": {"type": "string"},
+          "owner": {"type": "string", "enum": ["payments-team", "search-team", "platform-team", "warehouse", "security-team", "product"]}
+        }
+      }
+    },
+    "unclustered": {"type": "array", "items": {"type": "string", "pattern": "^#\\d+$"}}
+  }
+}
