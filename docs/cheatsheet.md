@@ -30,6 +30,8 @@ System prompt: role, procedure, exact output format.
 
 Lint: `python3 tools/lint_agents.py .claude/agents`
 
+Sizing `maxTurns`: see [choosing-maxturns.md](choosing-maxturns.md).
+
 ## Scopes (highest wins on name collision)
 
 managed settings › `--agents '{json}'` (session) › `.claude/agents/` (project) ›

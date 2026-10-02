@@ -16,6 +16,7 @@ you can run without Claude.
 ├── tools/lint_agents.py         catches silent frontmatter failures
 ├── docs/
 │   ├── cheatsheet.md            one-page reference
+│   ├── choosing-maxturns.md     how to size the maxTurns circuit breaker
 │   ├── after-class-practice.md  self-paced path with difficulty levels
 │   ├── version-notes.md         course text vs current Claude Code
 │   └── troubleshooting.md
